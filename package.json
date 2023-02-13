@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
-    "major": "npm version major && npm publish"
+    "major": "npm version major && npm publish",
+    "beta": "npm run build && npm publish  --tag beta"
   },
   "repository": {
     "type": "git",
