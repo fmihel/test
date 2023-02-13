@@ -1,22 +1,20 @@
 {
-  "name": "test",
-  "version": "0.0.2",
-  "description": "test version",
+  "name": "fmihel-test",
+  "version": "0.0.3",
+  "description": "test OTP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "patch": "npm version patch && npm publish",
-    "minor": "npm version minor && npm publish",
-    "major": "npm version major && npm publish"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fmihel/test.git"
   },
   "keywords": [
-    "test"
+    "test",
+    "OTP"
   ],
-  "author": "fmihel76@gmail.com",
+  "author": "fmihel",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fmihel/test/issues"
