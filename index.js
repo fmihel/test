@@ -1,3 +1,3 @@
 function mVesrion(){
-    console.log('0.1.0@beta');
+    console.log('1.0.1@beta-1');
 }
