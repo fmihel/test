@@ -1,2 +1,2 @@
 # test
-test composer plu
+test composer plugin v0.2.2
