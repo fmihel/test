@@ -1,0 +1,16 @@
+{
+    "name": "package_for_test",
+    "version": "0.0.1",
+    "description": "template for app on react and redux",
+    "main": "index.js",
+    "scripts": {
+      "push": "git push origin main && git push origin --tags"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+    },
+    "dependencies": {
+    }
+  }
+  
