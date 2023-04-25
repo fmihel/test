@@ -3,7 +3,8 @@
     "type": "library",
     "require": {
         "fmihel/console-log": "^1.4",
-        "composer-plugin-api": "^2.2"
+        "composer-plugin-api": "^2.2",
+        "smoren/mushroom-hook-manager": "^1.0"
     },
     "license": "MIT",
     "autoload": {
@@ -16,5 +17,21 @@
             "name": "fmihel",
             "email": "fmihel76@gmail.com"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "smoren/mushroom-hook-manager": true
+        }
+    },
+    "extra": {
+        "mushroom-use-hooks": true,
+        "mushroom-hooks": {
+            "after-install": [
+                "fmihel\\test\\MushroomHooks::afterInstall"
+            ],
+            "after-update": [
+                "fmihel\\test\\MushroomHooks::afterUpdate"
+            ]
+        }
+    }    
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c6a65cf202f3e0eb18f07bfd835f109",
+    "content-hash": "e0fca2637ba4d27a856033dff4d128d4",
     "packages": [
         {
             "name": "fmihel/console-log",
@@ -45,6 +45,62 @@
                 "source": "https://github.com/fmihel/console-log/tree/v1.4.1"
             },
             "time": "2022-04-01T11:18:00+00:00"
+        },
+        {
+            "name": "smoren/mushroom-hook-manager",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Smoren/mushroom-hook-manager-php.git",
+                "reference": "0d8d40b6184028932dccebd0a414e0e67c03d9f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Smoren/mushroom-hook-manager-php/zipball/0d8d40b6184028932dccebd0a414e0e67c03d9f1",
+                "reference": "0d8d40b6184028932dccebd0a414e0e67c03d9f1",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.1",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "\\Smoren\\Composer\\Mushroom\\HookManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Smoren\\Composer\\Mushroom\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Smoren",
+                    "email": "ofigate@gmail.com"
+                }
+            ],
+            "description": "Composer plugin for running post-install/post-update scripts of your project's dependencies",
+            "keywords": [
+                "HOOK",
+                "after install",
+                "after update",
+                "composer",
+                "dependency",
+                "plugin",
+                "script"
+            ],
+            "support": {
+                "issues": "https://github.com/Smoren/mushroom-hook-manager-php/issues",
+                "source": "https://github.com/Smoren/mushroom-hook-manager-php/tree/v1.0.0"
+            },
+            "time": "2021-12-10T17:51:32+00:00"
         }
     ],
     "packages-dev": [],
