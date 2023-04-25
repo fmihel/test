@@ -1,0 +1,20 @@
+{
+    "name": "fmihel/test",
+    "type": "library",
+    "require": {
+        "fmihel/console-log": "^1.4",
+        "composer-plugin-api": "^2.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fmihel\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fmihel",
+            "email": "fmihel76@gmail.com"
+        }
+    ]
+}

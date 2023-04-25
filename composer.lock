@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3c6a65cf202f3e0eb18f07bfd835f109",
+    "packages": [
+        {
+            "name": "fmihel/console-log",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fmihel/console-log.git",
+                "reference": "a1fa354c8a44618f3d7dde5e54097fd69b0c1470"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fmihel/console-log/zipball/a1fa354c8a44618f3d7dde5e54097fd69b0c1470",
+                "reference": "a1fa354c8a44618f3d7dde5e54097fd69b0c1470",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fmihel\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fmihel",
+                    "email": "fmihel76@gmail.com"
+                }
+            ],
+            "description": "error,log,console,php,javascript,js,error_log,console.log,console.info",
+            "support": {
+                "issues": "https://github.com/fmihel/console-log/issues",
+                "source": "https://github.com/fmihel/console-log/tree/v1.4.1"
+            },
+            "time": "2022-04-01T11:18:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "composer-plugin-api": "^2.2"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
