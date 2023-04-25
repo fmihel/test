@@ -30,7 +30,7 @@
                 "fmihel\\test\\MushroomHooks::afterInstall"
             ],
             "after-update": [
-                "fmihel\\test\\MushroomHooks::afterUpdate"
+                "fmihel\\test\\MushroomHooks::afterInstall"
             ]
         },
         "mushroom-hooks-params": {
@@ -43,6 +43,12 @@
                     "foo": "bar"
                 }
             }
-        }        
+        },
+        "mushroom-clear":[
+            "package.json",
+            "client"
+        ]
+            
+        
     }
 }

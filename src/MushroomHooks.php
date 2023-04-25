@@ -4,33 +4,50 @@ namespace fmihel\test;
 
 class MushroomHooks
 {
-    private static function routines()
+    const KEY_CLEAR_LIST = 'mushroom-clear';
+    const UP_TO_PACKAGE = '/../';
+
+    private static function del($path)
     {
-        //$file = __DIR__ . '/../package.json';
-        //if (file_exists($file)) {
-        //    unlink($file);
-        // }
+        if (!is_dir($path)) {
+            if (file_exists($path)) {
+                unlink($path);
+            }
+
+        } else {
+            if (substr($path, strlen($path) - 1, 1) != '/') {
+                $path .= '/';
+            }
+            $files = glob($path . '*', GLOB_MARK);
+            foreach ($files as $file) {
+                if (is_dir($file)) {
+                    self::del($file);
+                } else {
+                    unlink($file);
+                }
+            }
+            rmdir($path);
+        }
     }
+
     public static function afterInstall($params)
     {
-        // some actions on after install your package...
-        //error_log('afterInstall');
-        //error_log(__DIR__);
-        self::routines();
-        error_log('install ...................');
-        error_log(print_r($params, true));
-        error_log('...................');
+        try {
+            $json = file_get_contents(__DIR__ . self::UP_TO_PACKAGE . 'composer.json');
+            $composer = json_decode($json, true);
+            $extra = $composer['extra'];
+            $list = $extra[self::KEY_CLEAR_LIST];
+            foreach ($list as $obj) {
+                $files = glob(__DIR__ . self::UP_TO_PACKAGE . $obj);
+                foreach ($files as $file) {
+                    self::del($file);
+                }
+            };
 
+        } catch (\Exception $e) {
+            error_log(print_r($e));
+            throw $e;
+        };
     }
 
-    public static function afterUpdate($params)
-    {
-        // some actions on after update your package...
-        //error_log('afterUpdate');
-        //error_log(__DIR__);
-        self::routines();
-        error_log('update ...................');
-        error_log(print_r($params, true));
-        error_log('...................');
-    }
 }
