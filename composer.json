@@ -24,9 +24,13 @@
         }
     },
     "extra": {
-        "dev-files": {
-            "/":[
-                "package.json"
+        "mushroom-use-hooks": true,
+        "mushroom-hooks": {
+            "after-install": [
+                "fmihel\\test\\MushroomHooks::afterInstall"
+            ],
+            "after-update": [
+                "fmihel\\test\\MushroomHooks::afterUpdate"
             ]
         }
     }
