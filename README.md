@@ -1,2 +1,2 @@
 # test
-test composer plugin v0.2.2
+test composer plugin v1.0.4
