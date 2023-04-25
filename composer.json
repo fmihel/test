@@ -4,7 +4,7 @@
     "require": {
         "fmihel/console-log": "^1.4",
         "composer-plugin-api": "^2.2",
-        "smoren/mushroom-hook-manager": "^1.0"
+        "liborm85/composer-vendor-cleaner": "^1.7"
     },
     "license": "MIT",
     "autoload": {
@@ -20,18 +20,15 @@
     ],
     "config": {
         "allow-plugins": {
-            "smoren/mushroom-hook-manager": true
+            "liborm85/composer-vendor-cleaner": true
         }
     },
     "extra": {
-        "mushroom-use-hooks": true,
-        "mushroom-hooks": {
-            "after-install": [
-                "fmihel\\test\\MushroomHooks::afterInstall"
-            ],
-            "after-update": [
-                "fmihel\\test\\MushroomHooks::afterUpdate"
+        "dev-files": {
+            "fmihel/test":[
+                "/package.json",
+                "client/"
             ]
         }
-    }    
+    }
 }
