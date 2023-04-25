@@ -1,6 +1,12 @@
 <?php
-namespace fmihel;
+namespace fmihel\test;
 
 use fmihel\console;
 
-console::log('hi');
+class Test
+{
+    public static function out()
+    {
+        console::log('hi');
+    }
+}
