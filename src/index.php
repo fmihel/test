@@ -1,4 +1,5 @@
 <?php
+namespace fmihel;
 
 use fmihel\console;
 
