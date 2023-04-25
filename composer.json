@@ -32,6 +32,17 @@
             "after-update": [
                 "fmihel\\test\\MushroomHooks::afterUpdate"
             ]
-        }
+        },
+        "mushroom-hooks-params": {
+            "fmihel/test": {
+                "after-install": {
+                    "some-param": 1,
+                    "another-param": 2
+                },
+                "after-update": {
+                    "foo": "bar"
+                }
+            }
+        }        
     }
 }
