@@ -4,7 +4,7 @@
     "require": {
         "fmihel/console-log": "^1.4",
         "composer-plugin-api": "^2.2",
-        "liborm85/composer-vendor-cleaner": "^1.7"
+        "smoren/mushroom-hook-manager": "^1.0"
     },
     "license": "MIT",
     "autoload": {
@@ -20,7 +20,7 @@
     ],
     "config": {
         "allow-plugins": {
-            "liborm85/composer-vendor-cleaner": true
+            "smoren/mushroom-hook-manager": true
         }
     },
     "extra": {

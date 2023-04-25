@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "34ff54ab5019e0c1b48311d733e4c96b",
+    "content-hash": "218ab40a40603073c897112fc87f807a",
     "packages": [
         {
             "name": "fmihel/console-log",
@@ -47,35 +47,33 @@
             "time": "2022-04-01T11:18:00+00:00"
         },
         {
-            "name": "liborm85/composer-vendor-cleaner",
-            "version": "1.7.0",
+            "name": "smoren/mushroom-hook-manager",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/liborm85/composer-vendor-cleaner.git",
-                "reference": "e4ebaf2a65ac74fd4cc6dcf2b92e2f68cc4bb23c"
+                "url": "https://github.com/Smoren/mushroom-hook-manager-php.git",
+                "reference": "0d8d40b6184028932dccebd0a414e0e67c03d9f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liborm85/composer-vendor-cleaner/zipball/e4ebaf2a65ac74fd4cc6dcf2b92e2f68cc4bb23c",
-                "reference": "e4ebaf2a65ac74fd4cc6dcf2b92e2f68cc4bb23c",
+                "url": "https://api.github.com/repos/Smoren/mushroom-hook-manager-php/zipball/0d8d40b6184028932dccebd0a414e0e67c03d9f1",
+                "reference": "0d8d40b6184028932dccebd0a414e0e67c03d9f1",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1 || ^2.0",
-                "ext-json": "*",
-                "php": ">=5.6.0"
+                "composer-plugin-api": "^2.1",
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "composer/composer": "^1.10.23 || ^2.1.9",
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.4 || ^9.1"
+                "composer/composer": "^2.0"
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "Liborm85\\ComposerVendorCleaner\\Plugin"
+                "class": "\\Smoren\\Composer\\Mushroom\\HookManager"
             },
             "autoload": {
                 "psr-4": {
-                    "Liborm85\\ComposerVendorCleaner\\": "src/"
+                    "Smoren\\Composer\\Mushroom\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -84,27 +82,25 @@
             ],
             "authors": [
                 {
-                    "name": "Libor M.",
-                    "email": "liborm85@gmail.com"
+                    "name": "Smoren",
+                    "email": "ofigate@gmail.com"
                 }
             ],
-            "description": "Composer Vendor Cleaner removes unnecessary development files and directories from vendor directory.",
+            "description": "Composer plugin for running post-install/post-update scripts of your project's dependencies",
             "keywords": [
-                ".gitattributes",
-                "cleaner",
-                "cleanup",
+                "HOOK",
+                "after install",
+                "after update",
                 "composer",
-                "composer-plugin",
-                "delete",
-                "ignore",
-                "php",
-                "remove"
+                "dependency",
+                "plugin",
+                "script"
             ],
             "support": {
-                "issues": "https://github.com/liborm85/composer-vendor-cleaner/issues",
-                "source": "https://github.com/liborm85/composer-vendor-cleaner"
+                "issues": "https://github.com/Smoren/mushroom-hook-manager-php/issues",
+                "source": "https://github.com/Smoren/mushroom-hook-manager-php/tree/v1.0.0"
             },
-            "time": "2022-07-29T12:33:34+00:00"
+            "time": "2021-12-10T17:51:32+00:00"
         }
     ],
     "packages-dev": [],
